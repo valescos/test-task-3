@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <button
-    class="py-8 lg:py-4 px-12 bg-[#F15525] cursor-pointer hover:bg-[#38BFF2] flex items-center gap-2 rounded-[82px] transition-all"
+    class="py-6 px-10 bg-[#F15525] cursor-pointer hover:bg-[#38BFF2] flex items-center gap-2 rounded-[82px] transition-all"
   >
     <span class="text-white text-[20px]">{{ text }}</span>
     <svg

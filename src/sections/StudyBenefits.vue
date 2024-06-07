@@ -16,14 +16,16 @@ import { BENEFITS } from "../data/studyBenefits";
         :key="benefit.id"
         :class="
           index === BENEFITS.length - 1
-            ? 'lg:basis-[calc(100%_/_4_-_2rem_*_3_/_4)] flex lg:flex-col px-16 lg:px-4 items-center lg:text-center'
+            ? 'lg:basis-[calc(100%_/_4_-_2rem_*_3_/_4)] flex lg:flex-col px-12 lg:px-4 items-center lg:text-center'
             : 'px-4 flex flex-col items-center text-center basis-[calc(100%_/_2_-_1rem_*_1_/_2)] lg:basis-[calc(100%_/_4_-_2rem_*_3_/_4)]'
         "
-        class="bg-[#EAF2F5] rounded-[30px] py-8 lg:p-8 gap-2"
+        class="bg-[#EAF2F5] rounded-[30px] py-8 lg:p-8 gap-4"
       >
         <img :src="benefit.icon" />
-        <div>
-          <h3 class="text-[16px] leading-[18.5px]">
+        <div class="flex flex-col gap-2">
+          <h3
+            class="text-[14px] leading-[16px] sm:text-[16px] sm:leading-[18.5px]"
+          >
             {{ benefit.title }}
           </h3>
           <p class="text-[13px] leading-[15px]">
